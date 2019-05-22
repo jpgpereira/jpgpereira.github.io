@@ -1,0 +1,181 @@
+body {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  font-size: 5vh;
+  background-color: #fdfcf7;
+  color: #3b454c;
+  transition: all 0.5s ease-in-out;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#scroll-down {
+  position: absolute;
+  bottom: 2vh;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+#bul-logo {
+  max-width: 625px;
+  width: 100vw;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 40vw;
+  height: 40vw;
+  max-height: 150px;
+  max-width: 150px;
+  border-radius: 20px;
+  margin: 1vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.project:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.description {
+  padding: 0 2vw;
+  max-width: 625px;
+}
+
+.description p {
+  font-size: 4vh;
+}
+
+#tapmyback {
+  background-image: url('https://builduplabs.com/wp-content/uploads/2015/12/tmb-project_site-1.png');
+}
+
+#kissmyscore {
+  background-image: url('https://www.kissmyscore.com/wp-content/uploads/2018/09/kmsLogo.png');
+}
+
+#fuckmarrykill {
+  background-image: url('https://builduplabs.com/wp-content/uploads/2017/01/fmk-project_site-1.png');
+  background-position: left;
+  background-size: 190%;
+}
+
+#ideageneration {
+  background-image: url('https://builduplabs.com/wp-content/uploads/2016/08/catchup.jpg');
+}
+
+#bul {
+  background-color: #ff7518;
+  color: #fdfcf7;
+  justify-content: space-around;
+}
+
+#tmb {
+  background-color: #00a57d;
+  color: #fdfcf7;
+}
+
+#ig {
+  background-color: #07232c;
+  color: #fdfcf7;
+}
+
+#catchup,
+#toytoy {
+  display: none;
+}
+
+#fmk {
+  background: rgb(248, 137, 86);
+  background: linear-gradient(
+    180deg,
+    rgba(248, 137, 86, 1) 0%,
+    rgba(247, 71, 134, 1) 25%,
+    rgba(190, 41, 188, 1) 50%,
+    rgba(87, 151, 194, 1) 75%,
+    rgba(0, 75, 181, 1) 100%
+  );
+  color: #fdfcf7;
+}
+
+#kms {
+  background: rgb(22, 58, 76);
+  background: linear-gradient(
+    180deg,
+    rgba(22, 58, 76, 1) 50%,
+    rgba(11, 39, 53, 1) 100%
+  );
+  color: #fdfcf7;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+h1 {
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+}
+
+.mode {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  font-size: 4vh;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: #3b454c;
+  color: #fdfcf7;
+}
+
+.scale {
+  transition: font-size 0.2s ease-in-out;
+}
+.scale:hover {
+  font-size: 4vh;
+}
+
+#intro {
+  margin-bottom: 1vh;
+  padding: 0 5vw;
+}
+#intro-static {
+  display: none;
+  margin-bottom: 1vh;
+  padding: 0 5vw;
+}
+
+.social {
+  display: inline-block;
+  color: inherit;
+  margin: 0 1vw;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.smaller {
+  font-size: 3vh;
+}

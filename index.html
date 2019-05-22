@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>João Pereira | Full Stack Developer</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.2/dist/typeit.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body class="no-scroll">
+  <i class="mode hidden light animated fadeIn slower" data-feather="moon" onclick="toggle(true)"></i>
+  <i class="mode hidden dark animated fadeIn slower" data-feather="sun" onclick="toggle(true)"></i>
+  <div id="main" class="section">
+    <span id="intro"></span>
+    <span id="intro-static">
+      Hi!<br />
+      My name is João and I am<br />
+      a Full Stack Developer<br />
+      I break stuff @ <a onclick="scrollBUL()" href="#">Build Up Labs</a>.<br />
+      Passionate about Startups & Entrepreneurship<br /><br />
+      Drop me a line <a href="mailto:jpgpereira.92@gmail.com">here</a>,<br />
+      or you can stalk me:
+    </span>
+    <div>
+      <a class="social hidden smaller scale" href="https://github.com/jpgpereira">
+        <i data-feather="github" class="fab"></i>
+      </a>
+      <a class="social hidden smaller scale" href="https://www.linkedin.com/in/jpgpereira/">
+        <i data-feather="linkedin" class="fab"></i>
+      </a>
+      <a class="social hidden smaller scale" href="https://twitter.com/jpgpereira_">
+        <i data-feather="twitter" class="fab"></i>
+      </a>
+      <!-- <a class="social hidden smaller scale" href="https://medium.com/@jpgpereira_">
+        <i data-feather="circle" class="fab"></i>
+      </a> -->
+    </div>
+    <i id="scroll-down" class="hidden fas fa-angle-double-down" onclick="scrollBUL()"></i>
+  </div>
+  <div id="bul" class="section">
+    <img id="bul-logo" src="https://builduplabs.com/wp-content/uploads/2016/01/Builduplabs_site_v2-03.svg"
+      alt="Build Up Labs">
+    <div class="description">
+      <p>Startup Studio with the goal to create amazing products that deliver great experiences and real value to users
+        at scale.</p>
+    </div>
+    <div id="projects">
+      <div class="project" id="tapmyback" onclick="scrollTMB()"></div>
+      <div class="project" id="ideageneration" onclick="scrollIG()"></div>
+      <div class="project" id="fuckmarrykill" onclick="scrollFMK()"></div>
+      <div class="project" id="kissmyscore" onclick="scrollKMS()"></div>
+      <!-- <a class="project" id="tapmyback" onclick="scrollTMB(); return false;" href="#"></a>
+      <a class="project" onclick="scrollIG(); return false;" href="#">Idea Generation</a> -->
+      <!-- <a class="project" onclick="scrollCatchup(); return false;" href="#">Catchup</a>
+      <a class="project" onclick="scrollToy(); return false;" href="#">ToyToy</a> -->
+      <!-- <a class="project" onclick="scrollFMK(); return false;" href="#">F*, Marry, Kill</a>
+      <a class="project" onclick="scrollKMS(); return false;" href="#">Kiss my Score</a>
+      <a class="project" onclick="scrollMain(); return false;" href="#">return</a> -->
+    </div>
+  </div>
+  <div id="tmb" class="section">
+    <h1>Tap My Back</h1>
+    <a onclick="scrollBUL(); return false;" href="#">return</a>
+  </div>
+  <div id="ig" class="section">
+    <h1>Idea Generation</h1>
+    <a onclick="scrollBUL(); return false;" href="#">return</a>
+  </div>
+  <div id="catchup" class="section">
+    <h1>Catchup</h1>
+    <a onclick="scrollBUL(); return false;" href="#">return</a>
+  </div>
+  <div id="toytoy" class="section">
+    <h1>ToyToy</h1>
+    <a onclick="scrollBUL(); return false;" href="#">return</a>
+  </div>
+  <div id="fmk" class="section">
+    <h1>F* Marry Kill</h1>
+    <a onclick="scrollBUL(); return false;" href="#">return</a>
+  </div>
+  <div id="kms" class="section">
+    <h1>Kiss my Score</h1>
+    <a onclick="scrollBUL(); return false;" href="#">return</a>
+  </div>
+</body>
+<script src="./script.js"></script>
+<noscript>
+  <style type="text/css">
+    #intro-static {
+      display: block;
+    }
+
+    #intro {
+      display: none;
+    }
+
+    .social {
+      display: inline-block !important;
+    }
+  </style>
+</noscript>
+
+</html>
