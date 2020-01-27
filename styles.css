@@ -5,15 +5,21 @@ body {
   background-color: #fdfcf7;
   color: #3b454c;
   transition: all 0.5s ease-in-out;
+  -webkit-overflow-scrolling: auto;
 }
 
 .section {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
+}
+
+.center {
+  justify-content: center;
 }
 
 #scroll-down {
@@ -22,6 +28,7 @@ body {
   left: 0;
   right: 0;
   cursor: pointer;
+  width: 100%;
 }
 
 #bul-logo {
@@ -179,3 +186,26 @@ a {
 .smaller {
   font-size: 3vh;
 }
+
+.section ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  width: 85%;
+}
+
+.section ul li {
+  font-size: 3vh;
+  /* line-height: 2.5rem; */
+}
+
+/* @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  .section ul li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+} */

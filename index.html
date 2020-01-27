@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>João Pereira | Full Stack Developer</title>
-  <link rel="stylesheet" href="./styles.css">
+  <title>jpgpereira | Full Stack Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.2/dist/typeit.min.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body class="no-scroll">
   <i class="mode hidden light animated fadeIn slower" data-feather="moon" onclick="toggle(true)"></i>
   <i class="mode hidden dark animated fadeIn slower" data-feather="sun" onclick="toggle(true)"></i>
-  <div id="main" class="section">
+  <div id="main" class="section center">
     <span id="intro"></span>
     <span id="intro-static">
       Hi!<br />
@@ -42,9 +42,9 @@
         <i data-feather="circle" class="fab"></i>
       </a> -->
     </div>
-    <i id="scroll-down" class="hidden fas fa-angle-double-down" onclick="scrollBUL()"></i>
+    <i id="scroll-down" data-feather="chevrons-down" class="hidden fab" onclick="scrollBUL()"></i>
   </div>
-  <div id="bul" class="section">
+  <!-- <div id="bul" class="section">
     <img id="bul-logo" src="https://builduplabs.com/wp-content/uploads/2016/01/Builduplabs_site_v2-03.svg"
       alt="Build Up Labs">
     <div class="description">
@@ -56,17 +56,16 @@
       <div class="project" id="ideageneration" onclick="scrollIG()"></div>
       <div class="project" id="fuckmarrykill" onclick="scrollFMK()"></div>
       <div class="project" id="kissmyscore" onclick="scrollKMS()"></div>
-      <!-- <a class="project" id="tapmyback" onclick="scrollTMB(); return false;" href="#"></a>
-      <a class="project" onclick="scrollIG(); return false;" href="#">Idea Generation</a> -->
-      <!-- <a class="project" onclick="scrollCatchup(); return false;" href="#">Catchup</a>
-      <a class="project" onclick="scrollToy(); return false;" href="#">ToyToy</a> -->
-      <!-- <a class="project" onclick="scrollFMK(); return false;" href="#">F*, Marry, Kill</a>
-      <a class="project" onclick="scrollKMS(); return false;" href="#">Kiss my Score</a>
-      <a class="project" onclick="scrollMain(); return false;" href="#">return</a> -->
     </div>
   </div>
   <div id="tmb" class="section">
     <h1>Tap My Back</h1>
+    <ul>
+      <li>- Integrated business APIs (Stripe, Mailjet,  Slack, Message.io, OneSignal, PowerBI) to automate operational tasks.</li>
+      <li>- Handled technical debt by re implementing the solution with a different technological stack, from PHP to JavaScript.</li>
+      <li>- Designed and implemented an internal API for enterprised clients.</li>
+      <li>- Lead the development of the pivot of the product scope, from a recognition tool to a full service feedback platform.</li>
+    </ul>
     <a onclick="scrollBUL(); return false;" href="#">return</a>
   </div>
   <div id="ig" class="section">
@@ -88,7 +87,7 @@
   <div id="kms" class="section">
     <h1>Kiss my Score</h1>
     <a onclick="scrollBUL(); return false;" href="#">return</a>
-  </div>
+  </div> -->
 </body>
 <script src="./script.js"></script>
 <noscript>

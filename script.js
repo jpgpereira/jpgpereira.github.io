@@ -1,4 +1,5 @@
 feather.replace();
+const greetings = ['Hey!', 'Hi!', 'Olá!', 'Hola!', 'Howdy!', 'Oi!'];
 const hours = new Date().getHours();
 const isDayTime = hours > 6 && hours < 20;
 const intro = new TypeIt('#intro', {
@@ -23,8 +24,8 @@ const intro = new TypeIt('#intro', {
     // bodyElement.classList.remove('no-scroll');
   },
 })
-  .type('Hi!')
-  .pause(1500)
+  .type(greetings[Math.floor(Math.random() * greetings.length)])
+  .pause(1000)
   .break()
   .break()
   .type('My name is João')
@@ -56,8 +57,11 @@ const intro = new TypeIt('#intro', {
   .delete(5)
   .pause(150)
   .type(
-    'break stuff @ <a onclick="scrollBUL(); return false;" href="#">Build Up Labs</a>.'
+    'break stuff @ <a target="_blank" href="https://builduplabs.com">Build Up Labs</a>.'
   )
+  // .type(
+  //   'break stuff @ <a onclick="scrollBUL(); return false;" href="#">Build Up Labs</a>.'
+  // )
   .pause(1000)
   .break()
   .break()
@@ -79,9 +83,9 @@ const toggle = icon => {
 };
 const darkMode = window.matchMedia('(prefers-color-scheme: dark)');
 if (darkMode.matches) {
-  toggle(true);
+  toggle(false);
 }
-if (!isDayTime) {
+if (!darkMode.matches && !isDayTime) {
   toggle(false);
 }
 const navigate = section => {
