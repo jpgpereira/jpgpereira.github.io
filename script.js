@@ -1,4 +1,5 @@
 feather.replace();
+
 const greetings = ['Hey!', 'Hi!', 'Olá!', 'Hola!', 'Howdy!', 'Oi!'];
 const hours = new Date().getHours();
 const isDayTime = hours > 6 && hours < 20;
